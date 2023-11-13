@@ -38,7 +38,7 @@ const About = () => {
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>
+      </motion.div>git config --global --get user.email
 
       <motion.div 
         variants={fadeIn("", "", 0.1, 1)}
