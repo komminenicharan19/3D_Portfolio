@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 import { styles } from '../styles';
 import { services } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';
-import { SectionWrapper } from '../hoc';
+import { SectionWrapper } from '../hoc'; 
 
 
 const ServiceCard = ({index, title, icon}) => {
@@ -38,7 +38,7 @@ const About = () => {
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
-      </motion.div>git config --global --get user.email
+      </motion.div>
 
       <motion.div 
         variants={fadeIn("", "", 0.1, 1)}
@@ -57,4 +57,4 @@ const About = () => {
   )
 }
 
-export default About;
+export default SectionWrapper(About, "about")
